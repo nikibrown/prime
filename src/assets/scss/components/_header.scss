@@ -1,3 +1,36 @@
 header {
-	
+    @include media-breakpoint-up(lg) {
+        background-size: cover;
+    }
+
+    .header-top {
+        background-color: $white;
+        margin: 0;
+    }
+
+    .header-bottom {
+        margin: 0;
+    }
+    .logo {
+        max-width: 170px;
+    }
+
+    .tagline {
+        margin: 0;
+    }
+
+    .page-title {
+        background-color: rgba(23, 56, 98, 0.9);
+        color: $white;
+        margin-top: 100px;
+    }
+
+    .bg-dark {
+        background-color: rgba(23, 56, 98, 0.9) !important;
+    }
+
+    .navbar-toggler {
+        border: none;
+        margin: 0 auto;
+    }
 }

@@ -7202,6 +7202,35 @@ body {
   font-size: 16px;
   line-height: 1.5; }
 
+@media (min-width: 992px) {
+  header {
+    background-size: cover; } }
+
+header .header-top {
+  background-color: #fff;
+  margin: 0; }
+
+header .header-bottom {
+  margin: 0; }
+
+header .logo {
+  max-width: 170px; }
+
+header .tagline {
+  margin: 0; }
+
+header .page-title {
+  background-color: rgba(23, 56, 98, 0.9);
+  color: #fff;
+  margin-top: 100px; }
+
+header .bg-dark {
+  background-color: rgba(23, 56, 98, 0.9) !important; }
+
+header .navbar-toggler {
+  border: none;
+  margin: 0 auto; }
+
 .btn {
   border: none;
   border-radius: 25px;
@@ -7225,5 +7254,4 @@ body {
       background-color: #420033; }
 
 body {
-  background: salmon !important;
-  padding: 40px; }
+  background: salmon !important; }
