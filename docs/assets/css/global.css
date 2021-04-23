@@ -7245,13 +7245,86 @@ header .navbar-toggler {
     top: 50%;
     transform: translateY(-50%); }
   .btn.btn-primary {
-    background-color: #ED5791; }
+    background-color: #ed5791; }
     .btn.btn-primary:hover {
       background-color: #eb4082; }
   .btn.btn-secondary {
-    background-color: #5B0047; }
+    background-color: #5b0047; }
     .btn.btn-secondary:hover {
       background-color: #420033; }
+
+.navbar .dropdown-toggle:after {
+  color: rgba(255, 255, 255, 0.4);
+  margin-left: 0.255em;
+  vertical-align: 0;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  text-rendering: auto;
+  line-height: 1; }
+
+.nav-link {
+  margin-bottom: 0;
+  color: #fff !important;
+  margin-bottom: 0;
+  text-transform: uppercase; }
+  .nav-link span {
+    display: inline-block;
+    height: 100%;
+    position: relative; }
+    .nav-link span:after {
+      background-color: none;
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 5px; }
+      @media (min-width: 992px) {
+        .show .nav-link span:after {
+          background-color: #efb656; } }
+  .nav-link:hover {
+    color: #fff; }
+    @media (min-width: 992px) {
+      .nav-link:hover span:after {
+        background-color: #efb656; } }
+
+.dropdown-menu {
+  border: none;
+  border-radius: 0;
+  left: 8px;
+  top: 114%; }
+  .dropdown-menu .dropdown-item {
+    position: relative; }
+    .dropdown-menu .dropdown-item:before {
+      color: #c2c4c5;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      content: '\f054';
+      font-family: 'Font Awesome 5 Free';
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 900;
+      text-rendering: auto;
+      line-height: 1;
+      margin-right: 20px; }
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none; }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block; }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0; } }
 
 body {
   background: salmon !important; }
