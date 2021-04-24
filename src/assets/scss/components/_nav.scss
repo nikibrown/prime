@@ -2,7 +2,7 @@
     .dropdown-toggle {
         &:after {
             color: rgba(255, 255, 255, 0.4);
-            margin-left: 0.255em;
+            margin-left: 0.25rem;
             vertical-align: 0;
             border-top: none;
             border-right: none;
@@ -22,18 +22,25 @@
     }
 }
 
-.nav-link {
-    margin-bottom: 0;
-    color: $white !important;
-    margin-bottom: 0;
-    text-transform: uppercase;
+.nav-item {
+    font-family: $gothambold;
+    font-size: 0.875rem;
+    letter-spacing: 0.08em;
+    position: relative;
+
+    .nav-link {
+        margin-bottom: 0;
+        color: $white !important;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
 
     span {
         display: inline-block;
         height: 100%;
         position: relative;
         &:after {
-            background-color: none;
+            background-color: transparent;
             content: '';
             position: absolute;
             left: 0;
@@ -67,9 +74,17 @@
     border: none;
     border-radius: 0;
     left: 8px;
-    top: 114%;
+    margin: 0;
+    //padding: 0 0 0.625rem 0;
+    padding: 0;
+    top: 122%;
 
     .dropdown-item {
+        color: #1f7da5;
+        font-family: $gothambook;
+        font-size: 0.875rem;
+        letter-spacing: 0;
+        padding: 0.625rem 0.9rem;
         position: relative;
 
         &:before {
@@ -84,7 +99,7 @@
             font-weight: 900;
             text-rendering: auto;
             line-height: 1;
-            margin-right: 20px;
+            margin-right: 0.626rem;
         }
     }
 }
