@@ -7331,6 +7331,7 @@ header .navbar-toggler {
         background-color: #efb656; } }
 
 .dropdown-menu {
+  box-shadow: 7px 9px 15px -5px rgba(0, 0, 0, 0.73);
   border: none;
   border-radius: 0;
   left: 8px;
@@ -7342,7 +7343,7 @@ header .navbar-toggler {
     font-family: "Gotham Book", sans-serif;
     font-size: 0.875rem;
     letter-spacing: 0;
-    padding: 0.625rem 0.9rem;
+    padding: 0.9rem 1.5rem 0.9rem 0.9rem;
     position: relative; }
     .dropdown-menu .dropdown-item:before {
       color: #c2c4c5;
