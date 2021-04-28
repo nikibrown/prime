@@ -7235,7 +7235,8 @@ em {
 
 header .header-top {
   background-color: #fff;
-  margin: 0; }
+  margin: 0;
+  padding: 1.5rem 2.8rem; }
 
 header .header-bottom {
   margin: 0; }
@@ -7365,6 +7366,22 @@ header .navbar-toggler {
     display: block; }
   .navbar .nav-item .dropdown-menu {
     margin-top: 0; } }
+
+.nav--utility {
+  font-size: 0.75rem;
+  text-transform: uppercase; }
+  .nav--utility .fas {
+    margin-right: 1.8rem; }
+  .nav--utility a {
+    color: #58595b; }
+    .nav--utility a:hover {
+      color: #323334;
+      text-decoration: none; }
+
+.tagline {
+  color: #173862;
+  font-size: 1rem;
+  text-transform: uppercase; }
 
 body {
   background: salmon !important; }

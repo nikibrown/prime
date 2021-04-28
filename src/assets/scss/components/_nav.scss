@@ -117,3 +117,26 @@
         margin-top: 0;
     }
 }
+
+.nav--utility {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+
+    .fas {
+        margin-right: 1.8rem;
+    }
+
+    a {
+        color: #58595b;
+        &:hover {
+            color: darken(#58595b, 15%);
+            text-decoration: none;
+        }
+    }
+}
+
+.tagline {
+    color: #173862;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
