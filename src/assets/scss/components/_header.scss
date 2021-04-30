@@ -4,6 +4,8 @@ header {
     }
 
     .header-top {
+        @extend .d-md-flex;
+        align-items: center;
         background-color: $white;
         margin: 0;
         padding: 1.5rem 2.8rem;
@@ -14,11 +16,24 @@ header {
         margin: 0;
     }
     .logo {
-        max-width: 170px;
-    }
+        display: block;
+        margin: 0 auto;
+        width: 130px;
+        @include media-breakpoint-up(md) {
+            margin-right: auto;
+            margin-left: 0;
+        }
+        @include media-breakpoint-up(lg) {
+            width: 170px;
+        }
 
-    .tagline {
-        margin: 0;
+        img {
+            height: auto;
+            width: 130px;
+            @include media-breakpoint-up(lg) {
+                width: 170px;
+            }
+        }
     }
 
     .page-title {

@@ -1,4 +1,18 @@
+.navbar-dark {
+    .navbar-toggler,
+    .navbar-toggler-icon {
+        background-image: none;
+        color: $white;
+        font-family: $gothambold;
+        font-size: 0.875rem;
+        height: auto;
+        text-transform: uppercase;
+        vertical-align: baseline;
+    }
+}
+
 .navbar {
+    min-height: 50px;
     .dropdown-toggle {
         &:after {
             color: rgba(255, 255, 255, 0.4);
@@ -118,9 +132,18 @@
     }
 }
 
+/* utility nav */
+
 .nav--utility {
     font-size: 0.75rem;
+    text-align: center;
     text-transform: uppercase;
+    margin-top: 20px;
+
+    @include media-breakpoint-up(md) {
+        margin-top: 0;
+        text-align: right;
+    }
 
     .fas {
         margin-right: 1.8rem;
@@ -137,6 +160,12 @@
 
 .tagline {
     color: #173862;
-    font-size: 1rem;
+    font-size: 0.875rem;
+    margin: 0;
     text-transform: uppercase;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+        margin: 30px 0 0 0;
+    }
 }
