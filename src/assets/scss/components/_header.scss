@@ -36,10 +36,20 @@ header {
         }
     }
 
+    .page-title-container {
+        flex-direction: column;
+        justify-content: flex-end;
+        display: flex;
+        height: 200px;
+    }
+
     .page-title {
         background-color: rgba(23, 56, 98, 0.9);
         color: $white;
-        margin-top: 100px;
+        padding: 20px 25px;
+        h1 {
+            margin-bottom: 0;
+        }
     }
 
     .bg-dark {

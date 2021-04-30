@@ -7196,6 +7196,9 @@ a.text-dark:hover, a.text-dark:focus {
   .container-xl {
     max-width: 1180px !important; } }
 
+article {
+  padding: 20px 25px; }
+
 @font-face {
   font-family: 'Gotham Book';
   src: url("../fonts/Gotham-Book.woff2") format("woff2"), url("../fonts/Gotham-Book.woff") format("woff");
@@ -7229,6 +7232,20 @@ strong {
 em {
   font-family: "Gotham Italic", sans-serif; }
 
+h1 {
+  font-family: "Gotham Book", sans-serif;
+  font-size: 2.125rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1.3rem; }
+
+p {
+  font-family: "Gotham Book", sans-serif;
+  font-size: 1rem; }
+
 @media (min-width: 992px) {
   header {
     background-size: cover; } }
@@ -7260,10 +7277,18 @@ header .logo {
       header .logo img {
         width: 170px; } }
 
+header .page-title-container {
+  flex-direction: column;
+  justify-content: flex-end;
+  display: flex;
+  height: 200px; }
+
 header .page-title {
   background-color: rgba(23, 56, 98, 0.9);
   color: #fff;
-  margin-top: 100px; }
+  padding: 20px 25px; }
+  header .page-title h1 {
+    margin-bottom: 0; }
 
 header .bg-dark {
   background-color: rgba(23, 56, 98, 0.9) !important; }
