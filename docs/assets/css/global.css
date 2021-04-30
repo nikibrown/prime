@@ -7222,6 +7222,7 @@ article {
 
 html,
 body {
+  color: #414042;
   font-family: "Gotham Book", sans-serif;
   font-size: 16px;
   line-height: 1.5; }
@@ -7237,14 +7238,20 @@ h1 {
   font-size: 2.125rem; }
 
 h2 {
+  font-family: "Gotham Bold", sans-serif;
   font-size: 1.5rem; }
 
 h3 {
+  font-family: "Gotham Bold", sans-serif;
   font-size: 1.3rem; }
 
 p {
   font-family: "Gotham Book", sans-serif;
   font-size: 1rem; }
+
+.lead {
+  color: #279bd2;
+  font-size: 1.8rem; }
 
 @media (min-width: 992px) {
   header {
@@ -7445,5 +7452,31 @@ header .navbar-toggler {
       font-size: 1rem;
       margin: 30px 0 0 0; } }
 
-body {
-  background: salmon !important; }
+.secondary-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between; }
+  @media (min-width: 992px) {
+    .secondary-nav ul {
+      flex-direction: row; } }
+  .secondary-nav ul li {
+    background-color: salmon;
+    margin: 20px 0 10px 0;
+    flex-grow: 1; }
+    @media (min-width: 992px) {
+      .secondary-nav ul li {
+        flex-basis: 33%;
+        background-color: blue;
+        margin: 10px; }
+        .secondary-nav ul li:first-child {
+          margin-left: 0; }
+        .secondary-nav ul li:last-child {
+          margin-right: 0; } }
+    .secondary-nav ul li a {
+      display: block;
+      padding: 20px;
+      text-align: center; }
+      @media (min-width: 992px) {
+        .secondary-nav ul li a {
+          padding: 50px; } }

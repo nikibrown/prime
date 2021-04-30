@@ -33,6 +33,7 @@ $gothambold: 'Gotham Bold', sans-serif;
 
 html,
 body {
+    color: #414042;
     font-family: $gothambook;
     font-size: 16px;
     line-height: 1.5;
@@ -52,14 +53,21 @@ h1 {
 }
 
 h2 {
+    font-family: $gothambold;
     font-size: 1.5rem;
 }
 
 h3 {
+    font-family: $gothambold;
     font-size: 1.3rem;
 }
 
 p {
     font-family: $gothambook;
     font-size: 1rem;
+}
+
+.lead {
+    color: #279bd2;
+    font-size: 1.8rem;
 }
