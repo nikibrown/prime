@@ -51,6 +51,7 @@
 
     span {
         display: inline-block;
+        /* TODO this is an issue in FF & Safari */
         height: 100%;
         position: relative;
         &:after {
@@ -174,17 +175,65 @@
     ul {
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
         @include media-breakpoint-up(lg) {
             flex-direction: row;
         }
         justify-content: space-between;
         align-content: space-between;
         li {
-            background-color: salmon;
+            flex-grow: 1;
+            font-family: $gothambold;
+            font-size: 1.25rem;
             margin: 20px 0 10px 0;
+
+            &:hover {
+                color: darken($white, 20%);
+            }
+
+            &.secondary-nav-1 {
+                background-color: $brand-navy;
+                border: 10px solid $brand-navy;
+                @include media-breakpoint-up(lg) {
+                    &:hover {
+                        color: $brand-navy;
+                    }
+                }
+            }
+
+            &.secondary-nav-2 {
+                background-color: $brand-gray;
+                border: 10px solid $brand-gray;
+                @include media-breakpoint-up(lg) {
+                    &:hover {
+                        color: $brand-gray;
+                    }
+                }
+            }
+
+            &.secondary-nav-3 {
+                background-color: $brand-blue;
+                border: 10px solid $brand-blue;
+                @include media-breakpoint-up(lg) {
+                    &:hover {
+                        color: $brand-blue;
+                    }
+                }
+            }
+
+            &.secondary-nav-4 {
+                background-color: $brand-green;
+                border: 10px solid $brand-green;
+                @include media-breakpoint-up(lg) {
+                    &:hover {
+                        color: $brand-green;
+                    }
+                }
+            }
 
             @include media-breakpoint-up(lg) {
                 flex-basis: 33%;
+                border: 10px solid blue;
                 background-color: blue;
                 margin: 10px;
                 &:first-child {
@@ -193,15 +242,30 @@
                 &:last-child {
                     margin-right: 0;
                 }
+
+                &:hover {
+                    background-color: $white;
+                }
+
+                i,
+                span {
+                    display: block;
+                }
+
+                i {
+                    margin-bottom: 1rem;
+                }
             }
-            flex-grow: 1;
 
             a {
+                color: $white;
                 display: block;
                 padding: 20px;
-                text-align: center;
-                @include media-breakpoint-up(lg) {
-                    padding: 50px;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: inherit;
+                    text-decoration: none;
                 }
             }
         }
