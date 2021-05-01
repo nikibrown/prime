@@ -18,6 +18,11 @@
 				});
 
 
+				$('.accordion-table').on('show.bs.collapse','.collapse', function() {
+   					$('.accordion-table').find('.collapse.show').collapse('hide');
+				});
+
+
 			}) ;
 		</script>
 	</body>
