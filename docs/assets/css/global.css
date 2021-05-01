@@ -7228,7 +7228,7 @@ body {
   line-height: 1.5; }
 
 strong {
-  font-family: "Gotham Book", sans-serif; }
+  font-family: "Gotham Bold", sans-serif; }
 
 em {
   font-family: "Gotham Italic", sans-serif; }
@@ -7596,3 +7596,31 @@ header .navbar-toggler {
 .parent.has-border-top th,
 .parent.has-border-top td {
   border-top: 3px solid #279bd2; }
+
+.bio {
+  display: flex;
+  margin-bottom: 40px; }
+
+.bio-headshot {
+  margin-right: 20px; }
+
+.bio-details {
+  border-top: 5px solid #c2c4c5;
+  padding: 20px 0 10px 0;
+  flex-basis: 100%; }
+
+.publication-single {
+  border-top: 1px solid #c2c4c5;
+  padding: 20px 0px; }
+
+.abstract-details {
+  background-color: #efefef;
+  padding: 20px 20px 10px 20px; }
+
+.abstract-link {
+  color: #1156b8; }
+  .abstract-link:hover {
+    cursor: pointer;
+    text-decoration: none; }
+  .abstract-link[aria-expanded='true'] .fa-caret-right {
+    transform: rotate(90deg); }
