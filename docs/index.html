@@ -281,14 +281,16 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
+        <tr class="parent">
             <th scope="row"><h4>Brettanomyces custersianus</h4></th>
             <td><p>12 December 2020</p></td>
             <td>
                 <a href="">NCBI <i class="fas fa-download"></i></a>
             </td>
-            <td class="details-link" data-toggle="collapse" data-target="#details1">
-                <p>Details <i class="fas fa-caret-down"></i></p>
+            <td>
+                <p class="details-link" data-toggle="collapse" data-target="#details1">
+                    Details <i class="fas fa-caret-down"></i>
+                </p>
             </td>
         </tr>
         <tr class="details collapse" id="details1">
@@ -343,15 +345,17 @@
                 </table>
             </td>
         </tr>
-        <tr>
+        <tr class="parent">
             <th scope="row"><h4>Bifidobacterium longum</h4></th>
             <td><p>04 January 2021</p></td>
             <td>
                 <a href="">NCBI <i class="fas fa-download"></i></a>
                 <a href="">Biocyc <i class="fas fa-download"></i></a>
             </td>
-            <td class="details-link" data-toggle="collapse" data-target="#details2">
-                <p>Details <i class="fas fa-caret-down"></i></p>
+            <td>
+                <p class="details-link" data-toggle="collapse" data-target="#details2">
+                    Details <i class="fas fa-caret-down"></i>
+                </p>
             </td>
         </tr>
         <tr class="details collapse" id="details2">
@@ -406,14 +410,16 @@
                 </table>
             </td>
         </tr>
-        <tr>
+        <tr class="parent">
             <th scope="row"><h4>Helicobacter pylori</h4></th>
             <td><p>15 May 2019</p></td>
             <td>
                 <a href="">NCBI <i class="fas fa-download"></i></a>
             </td>
-            <td class="details-link" data-toggle="collapse" data-target="#details3">
-                <p>Details <i class="fas fa-caret-down"></i></p>
+            <td>
+                <p class="details-link" data-toggle="collapse" data-target="#details3">
+                    Details <i class="fas fa-caret-down"></i>
+                </p>
             </td>
         </tr>
         <tr class="details collapse" id="details3">
@@ -484,11 +490,19 @@
     	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		
 		<script>
-			// $(document).ready(function() {
-			// 	$(".details-link").click(function() {
-  			// 		$(".details").toggle();
-			// 	});
-			// }) ;
+			$(document).ready(function() {
+
+				// listening for bs.collapse to run and toggling border from previous table row
+				$('.accordion-table').on('shown.bs.collapse', function () {
+					$(".details.collapse.show").prev().addClass("has-border-top");
+				});
+
+				$('.accordion-table').on('hidden.bs.collapse', function () {
+					$(".parent").removeClass("has-border-top");
+				});
+
+
+			}) ;
 		</script>
 	</body>
 </html>

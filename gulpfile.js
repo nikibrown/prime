@@ -42,6 +42,7 @@ function include() {
 exports.default = function () {
     gulp.watch('./src/**/*').on(
         'change',
-        series(style, include, moveimg, movejs, browserSync.reload)
+        series(include, style, moveimg, movejs, browserSync.reload)
     );
+    console.log('gulp watch');
 };
