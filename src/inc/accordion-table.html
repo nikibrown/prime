@@ -1,11 +1,12 @@
 <h3>Genome Highlights</h3>
 
 <!-- http://jsfiddle.net/2Dj7Y/ -->
-<table class="table accordion-table" data-toggle="table">
+<!-- Booststrap table adds a bunch of divs and classes that conflict wiht styling. Also need to figure out a way to have the details inside the parent <tr> -->
+<table class="table accordion-table">
     <thead>
         <tr>
-            <th scope="col" data-sortable="true" data-field="name"><h4>Name</h4></th>
-            <th scope="col" data-sortable="true" data-field="date"><h4>Date of Isolation</h4></th>
+            <th scope="col"><h4>Name</h4></th>
+            <th scope="col"><h4>Date of Isolation</h4></th>
             <th scope="col"><h4>Download</h4></th>
             <th scope="col"></th>
         </tr>
@@ -83,6 +84,7 @@
                 </table>
             </td>
         </tr>
+
         <tr class="parent">
             <th scope="row"><h4>Bifidobacterium longum</h4></th>
             <td><p>04 January 2021</p></td>
@@ -156,6 +158,7 @@
                 </table>
             </td>
         </tr>
+
         <tr class="parent">
             <th scope="row"><h4>Helicobacter pylori</h4></th>
             <td><p>15 May 2019</p></td>

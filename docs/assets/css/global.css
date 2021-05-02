@@ -7326,6 +7326,26 @@ header .navbar-toggler {
   border: none;
   margin: 0 auto; }
 
+footer {
+  background-color: #173862;
+  color: #fff;
+  padding: 2.25rem 0; }
+  footer a {
+    color: #fff; }
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline; }
+  footer p {
+    font-size: 0.875rem; }
+
+.social-nav {
+  text-align: left; }
+  @media (min-width: 992px) {
+    .social-nav {
+      text-align: right; } }
+  .social-nav .fa-facebook-f {
+    margin-right: 20px; }
+
 main a {
   color: #1f7da5; }
   main a:hover {
