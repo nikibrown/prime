@@ -7655,3 +7655,32 @@ main a {
     text-decoration: none; }
   .abstract-link[aria-expanded='true'] .fa-caret-right {
     transform: rotate(90deg); }
+
+.slider {
+  background-color: #efefef;
+  padding: 3.125rem 0; }
+
+.logo-slider {
+  margin-bottom: 0; }
+  .logo-slider img {
+    display: block;
+    margin: 0 auto; }
+
+.slick-arrow {
+  border: none;
+  color: #173862;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.slick-prev {
+  left: 0px; }
+  @media (min-width: 768px) {
+    .slick-prev {
+      left: -20px; } }
+
+.slick-next {
+  right: 0px; }
+  @media (min-width: 768px) {
+    .slick-next {
+      right: -20px; } }
