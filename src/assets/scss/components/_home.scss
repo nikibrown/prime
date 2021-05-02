@@ -1,0 +1,29 @@
+.list-news {
+    li {
+        display: flex;
+        margin-bottom: 40px;
+
+        img {
+            margin-right: 30px;
+        }
+
+        .news-content {
+            flex-basis: 100%;
+        }
+    }
+}
+
+.home-publicaitons,
+.home-news {
+    background: $white;
+    margin-top: -140px;
+    padding: 20px 20px 0 20px;
+}
+
+.home-publicaitons {
+    margin-left: -20px;
+}
+
+.home-news {
+    margin-right: -20px;
+}

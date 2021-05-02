@@ -7319,6 +7319,15 @@ header .page-title {
   header .page-title h1 {
     margin-bottom: 0; }
 
+header .page-title-container-home {
+  flex-direction: column;
+  justify-content: flex-end;
+  display: flex;
+  height: 630px;
+  text-align: center; }
+  header .page-title-container-home .page-title {
+    margin-bottom: 140px; }
+
 header .bg-dark {
   background-color: rgba(23, 56, 98, 0.9) !important; }
 
@@ -7351,6 +7360,26 @@ main a {
   main a:hover {
     color: #134c65;
     text-decoration: none; }
+
+.list-news li {
+  display: flex;
+  margin-bottom: 40px; }
+  .list-news li img {
+    margin-right: 30px; }
+  .list-news li .news-content {
+    flex-basis: 100%; }
+
+.home-publicaitons,
+.home-news {
+  background: #fff;
+  margin-top: -140px;
+  padding: 20px 20px 0 20px; }
+
+.home-publicaitons {
+  margin-left: -20px; }
+
+.home-news {
+  margin-right: -20px; }
 
 .btn {
   border: none;
