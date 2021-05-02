@@ -7326,6 +7326,12 @@ header .navbar-toggler {
   border: none;
   margin: 0 auto; }
 
+main a {
+  color: #1f7da5; }
+  main a:hover {
+    color: #134c65;
+    text-decoration: none; }
+
 .btn {
   border: none;
   border-radius: 25px;
@@ -7609,6 +7615,11 @@ header .navbar-toggler {
   padding: 20px 0 10px 0;
   flex-basis: 100%; }
 
+.year {
+  border-top: 5px solid #c2c4c5;
+  display: inline-block;
+  padding-top: 10px; }
+
 .publication-single {
   border-top: 1px solid #c2c4c5;
   padding: 20px 0px; }
@@ -7618,7 +7629,7 @@ header .navbar-toggler {
   padding: 20px 20px 10px 20px; }
 
 .abstract-link {
-  color: #1156b8; }
+  color: #1f7da5; }
   .abstract-link:hover {
     cursor: pointer;
     text-decoration: none; }
