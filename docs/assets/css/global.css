@@ -7414,7 +7414,8 @@ main a {
   vertical-align: baseline; }
 
 .navbar {
-  min-height: 50px; }
+  min-height: 50px;
+  padding: 0 2.4rem; }
   .navbar .dropdown-toggle:after {
     color: rgba(255, 255, 255, 0.4);
     margin-left: 0.25rem;
@@ -7439,14 +7440,13 @@ main a {
   letter-spacing: 0.08em;
   position: relative; }
   .nav-item .nav-link {
-    margin-bottom: 0;
     color: #fff !important;
     margin-bottom: 0;
+    padding: 1.25rem 1rem;
     text-transform: uppercase; }
   .nav-item span {
     display: inline-block;
     /* TODO this is an issue in FF & Safari */
-    height: 100%;
     position: relative; }
     .nav-item span:after {
       background-color: transparent;
@@ -7454,7 +7454,7 @@ main a {
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 0;
+      bottom: -1.25rem;
       width: 100%;
       height: 5px; }
       @media (min-width: 992px) {
@@ -7467,13 +7467,15 @@ main a {
         background-color: #efb656; } }
 
 .dropdown-menu {
-  box-shadow: 7px 9px 15px -5px rgba(0, 0, 0, 0.73);
   border: none;
   border-radius: 0;
   left: 8px;
   margin: 0;
   padding: 0;
-  top: 122%; }
+  top: 100%; }
+  @media (min-width: 992px) {
+    .dropdown-menu {
+      box-shadow: 7px 9px 15px -5px rgba(0, 0, 0, 0.73); } }
   .dropdown-menu .dropdown-item {
     color: #1f7da5;
     font-family: "Gotham Book", sans-serif;

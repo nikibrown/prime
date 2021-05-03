@@ -13,6 +13,7 @@
 
 .navbar {
     min-height: 50px;
+    padding: 0 2.4rem;
     .dropdown-toggle {
         &:after {
             color: rgba(255, 255, 255, 0.4);
@@ -43,16 +44,16 @@
     position: relative;
 
     .nav-link {
-        margin-bottom: 0;
         color: $white !important;
         margin-bottom: 0;
+        padding: 1.25rem 1rem;
         text-transform: uppercase;
     }
 
     span {
         display: inline-block;
         /* TODO this is an issue in FF & Safari */
-        height: 100%;
+
         position: relative;
         &:after {
             background-color: transparent;
@@ -60,7 +61,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            bottom: 0;
+            bottom: -1.25rem;
             width: 100%;
             height: 5px;
 
@@ -86,14 +87,16 @@
 }
 
 .dropdown-menu {
-    box-shadow: 7px 9px 15px -5px rgba(0, 0, 0, 0.73);
+    @include media-breakpoint-up(lg) {
+        box-shadow: 7px 9px 15px -5px rgba(0, 0, 0, 0.73);
+    }
     border: none;
     border-radius: 0;
     left: 8px;
     margin: 0;
     //padding: 0 0 0.625rem 0;
     padding: 0;
-    top: 122%;
+    top: 100%;
 
     .dropdown-item {
         color: #1f7da5;
