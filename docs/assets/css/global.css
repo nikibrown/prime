@@ -7376,10 +7376,18 @@ main a {
   padding: 20px 20px 0 20px; }
 
 .home-publicaitons {
-  margin-left: -20px; }
+  margin-left: -1.5rem;
+  margin-right: -1.5rem; }
+  @media (min-width: 992px) {
+    .home-publicaitons {
+      margin-right: 0; } }
 
 .home-news {
-  margin-right: -20px; }
+  margin-right: -1.5rem;
+  margin-left: -1.5rem; }
+  @media (min-width: 992px) {
+    .home-news {
+      margin-left: 0; } }
 
 .btn {
   border: none;
